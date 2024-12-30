@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { Provider } from "react-redux";
 import { store } from "./store";
 import { AddTodo } from '@/components/AddTodo';
+import { StopWatch } from '@/components/StopWatch';
 
 export default function page() {
 
@@ -12,8 +13,9 @@ export default function page() {
   <Provider store={store}>
     <div>
       <h2>Welcome to React Redux-Toolkit</h2>
-      <AddTodo/>
-      <Todos />
+      {/* <AddTodo/>
+      <Todos /> */}
+      <StopWatch/>
     </div>
   </Provider>
   )
